@@ -1,0 +1,10 @@
+<ion-view view-title="Account" ng-init="ctrl.init()" cache-view="false">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+       Online
+    </ion-toggle>
+    </ion-list>
+    <button class="button button-block button-assertive" ng-click="ctrl.logout()" >Logout</button>
+  </ion-content>
+</ion-view>

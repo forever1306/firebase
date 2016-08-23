@@ -1,0 +1,12 @@
+<ion-view view-title="Chats" ng-init="ctrl.init()" cache-view="false">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="friend in ctrl.friends" type="item-text-wrap" ng-click="ctrl.chatOne(friend)">
+        <img ng-src="img/noavatar.png" >
+        <h2 ng-bind="friend.$id"></h2>
+        <p ng-bind="friend.content"></p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "minhnt": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}

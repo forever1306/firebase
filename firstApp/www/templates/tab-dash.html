@@ -1,0 +1,13 @@
+<ion-view view-title="Home" ng-init="ctrl.init()">
+  <ion-content class="padding">
+    <button class="button button-block button-assertive" ng-click="ctrl.login()" ng-show="!ctrl.currentUser">Login With Google</button>
+    <form name="frm" ng-submit="ctrl.chatWith(email)">
+      <div class="list list-inset" ng-show="ctrl.currentUser">
+        <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" ng-model="email" placeholder="Email">
+      </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
